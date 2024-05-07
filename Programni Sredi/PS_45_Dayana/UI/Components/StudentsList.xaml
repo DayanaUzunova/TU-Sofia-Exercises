@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="UI.Components.StudentsList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UI.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <DataGrid Name ="students" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="#" IsReadOnly="True" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Names" IsReadOnly="True" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Role" IsReadOnly="True" Binding="{Binding Role}" />
+                <DataGridTextColumn Header="Expires In" Binding="{Binding Expires}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
